@@ -1,10 +1,18 @@
 import java.util.ArrayList;
 
-
+/**
+ * @author Zeena Ford, 101229954
+ * @version september 18 2023
+ */
 
 public class AddressBook {
 
-    ArrayList<BuddyInfo> list = new ArrayList<>();
+    private ArrayList<BuddyInfo> buddyList = new ArrayList<>();
+
+    // constructor
+    public AddressBook(){
+
+    }
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Zeena", "greenland street", 613);
         AddressBook addressBook = new AddressBook();
@@ -12,13 +20,15 @@ public class AddressBook {
         addressBook.removeBuddy(buddy);
     }
 
+    // add method
     public void addBuddy(BuddyInfo addBud){
 
-        list.add(addBud);
+        buddyList.add(addBud);
     }
 
+    // remove method
     public void removeBuddy(BuddyInfo removeBud){
-        list.remove(removeBud);
+        buddyList.remove(removeBud);
     }
 
 }
