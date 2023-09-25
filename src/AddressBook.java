@@ -26,7 +26,7 @@ public class AddressBook {
         BuddyInfo buddy = new BuddyInfo("Zeena", "greenland street", 613);
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        addressBook.removeBuddy(buddy); //added text to file
     }
 
 }
