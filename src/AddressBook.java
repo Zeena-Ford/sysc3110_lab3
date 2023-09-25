@@ -29,4 +29,8 @@ public class AddressBook {
         addressBook.removeBuddy(buddy); //added text to file
     }
 
+    public void newBranchMethod(){
+
+    }
+
 }
